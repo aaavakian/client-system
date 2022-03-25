@@ -1,17 +1,13 @@
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-
-import './css/App.css';
+import ClientList from './components/clients/ClientList';
+import MainContent from './components/layout/MainContent';
+import SearchField from './components/search/SearchField';
 
 function App() {
   return (
-    <>
-      <Header />
-      <main className="container">
-        <h1>Welcome</h1>
-      </main>
-      <Footer />
-    </>
+    <MainContent>
+      <SearchField />
+      <ClientList />
+    </MainContent>
   );
 }
 
