@@ -22,7 +22,7 @@ const SearchField = ({onSearch}: SearchFieldProps) => {
       className="
         flex flex-row bg-white overflow-hidden
         border-2 border-gray-200 rounded-md
-        focus-within:border-gray-300 focus-within:shadow-md
+        duration-100 focus-within:border-gray-300 focus-within:shadow-md
       "
       onSubmit={handleSearch}
     >
@@ -39,7 +39,8 @@ const SearchField = ({onSearch}: SearchFieldProps) => {
         type="submit"
         className="
         bg-white text-teal-900 px-3
-          border-inherit border-l-2 hover:bg-gray-100
+          border-inherit border-l-2
+          duration-100 hover:bg-gray-100
         "
       >
         <BiSearch className="text-lg" />
