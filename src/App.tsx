@@ -9,17 +9,17 @@ import {filterClients} from './utils';
 const dummyClients: Client[] = [
   {
     name: 'Mister Alex',
-    phone: '+79999910132',
+    phone: '+7 (926) 991-01-32',
     visited: 3,
   },
   {
     name: 'Miss Jays',
-    phone: '+71231239321',
+    phone: '+7 (916) 123-93-21',
     visited: 8,
   },
   {
     name: 'Senior Pomidor',
-    phone: '+71319231300',
+    phone: '+7 (916) 923-13-00',
     visited: 10,
   },
 ];
