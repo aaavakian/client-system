@@ -9,7 +9,13 @@ const SearchField = ({onSearch}: SearchFieldProps) => {
   const [searchText, setSearchText] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchText(e.target.value);
+    const value = e.target.value;
+    setSearchText(value);
+
+    // Reset when empty
+    if (!value) {
+      onSearch?.(value);
+    }
   };
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
