@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {BiSearch} from 'react-icons/bi';
 
-type SearchFieldProps = {
+type Props = {
   onSearch?: (searchText: string) => void;
 };
 
-const SearchField = ({onSearch}: SearchFieldProps) => {
+const SearchField = ({onSearch}: Props) => {
   const [searchText, setSearchText] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,7 +26,7 @@ const SearchField = ({onSearch}: SearchFieldProps) => {
   return (
     <form
       className="
-        flex flex-row bg-white overflow-hidden
+        flex flex-row w-full bg-white overflow-hidden
         border-2 border-gray-200 rounded-md
         duration-100 focus-within:border-gray-300 focus-within:shadow-md
       "

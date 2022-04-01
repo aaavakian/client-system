@@ -3,6 +3,7 @@ import {useState} from 'react';
 import ClientList from './components/clients/ClientList';
 import MainContent from './components/layout/MainContent';
 import SearchField from './components/search/SearchField';
+import AddButton from './components/buttons/AddButton';
 import {Client} from './components/clients/types';
 import {filterClients} from './utils';
 
@@ -29,7 +30,10 @@ function App() {
 
   return (
     <MainContent>
-      <SearchField onSearch={setFilter} />
+      <div className="flex items-center gap-3">
+        <SearchField onSearch={setFilter} />
+        <AddButton />
+      </div>
       <ClientList clients={filterClients(dummyClients, filter)} />
     </MainContent>
   );

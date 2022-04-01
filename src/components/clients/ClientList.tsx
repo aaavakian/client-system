@@ -1,11 +1,11 @@
 import ClientListItem from './ClientListItem';
 import {Client} from './types';
 
-type ClientListProps = {
+type Props = {
   clients?: Client[];
 };
 
-const ClientList = ({clients}: ClientListProps) => {
+const ClientList = ({clients}: Props) => {
   return (
     <div className="flex flex-col bg-white rounded-md shadow-md">
       {clients?.length ? (

@@ -1,11 +1,11 @@
 import {formClientString} from './helpers';
 import type {Client} from './types';
 
-type ClientProps = {
+type Props = {
   client: Client;
 };
 
-const ClientListItem = ({client}: ClientProps) => {
+const ClientListItem = ({client}: Props) => {
   const handleNewVisit = () => {
     console.log(`New visit of ${client.name}`);
   };
@@ -19,8 +19,8 @@ const ClientListItem = ({client}: ClientProps) => {
         onClick={handleNewVisit}
         className="
           px-2 py-1 rounded-sm
-          text-sm text-white bg-teal-500
-          duration-150 hover:bg-teal-700
+          text-sm text-white bg-cyan-600
+          duration-150 hover:bg-cyan-700
         "
       >
         отметить посещение
