@@ -10,7 +10,7 @@ const cleanClientPhone: (client: Client) => Client = (client) => {
 };
 
 const combineStrings = (client: Client) => {
-  return `${client.name} ${client.phone} ${client.visited}`;
+  return `${client.name} ${client.phone} _${client.visited}`;
 };
 
 const includesFilterText = (filterText: string) => {
