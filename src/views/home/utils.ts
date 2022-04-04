@@ -1,4 +1,4 @@
-import {Client} from './components/clients/types';
+import {Client} from '../../components/clients/types';
 
 const removePhoneLiterals = (phone: string) => phone.replace(/[\s+\-()]/g, '');
 
